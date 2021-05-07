@@ -33,14 +33,14 @@
                 "Standard",
                 "Premium"
             ],
-            "defaultValue": "PerGB2018",
+            "defaultValue": "Free",
             "metadata": {
                 "description": "Pricing tier: pergb2018 or legacy tiers (Free, Standalone, PerNode, Standard or Premium) which are not available to all customers."
             }
         },
         "dataRetention": {
             "type": "int",
-            "defaultValue": 30,
+            "defaultValue": 7,
             "minValue": 7,
             "maxValue": 730,
             "metadata": {
@@ -56,6 +56,7 @@
         },
         "adminUsername": {
             "type": "string",
+            "defaultValue": "analyst",
             "metadata": {
                 "description": "Admin username for all Windows virtual machines."
             }
@@ -80,6 +81,7 @@
         },
         "allowedIPAddresses": {
             "type": "string",
+            "defaultValue": "0.0.0.0/0",
             "metadata": {
                 "description": "The sourceAddressPrefixes allowed to connect to all the VMs in this deployment"
             }
@@ -139,7 +141,7 @@
                 "Minimal",
                 "None"
             ],
-            "defaultValue": "Minimal"
+            "defaultValue": "All"
         },
         "collectWinEventProviders": {
             "type": "array",
@@ -163,14 +165,14 @@
         },
         "enableSysmon": {
             "type": "bool",
-            "defaultValue": false,
+            "defaultValue": true,
             "metadata": {
                 "description": "Do you want to install Sysmon on the endpoint?"
             }
         },
         "c2Framework": {
             "type": "string",
-            "defaultValue": "None",
+            "defaultValue": "empire",
             "allowedValues": [
                 "None",
                 "empire",
