@@ -227,8 +227,8 @@
         }
     },
     "variables": {
-        "artifactsBlacksmith": "https://raw.githubusercontent.com/OTRF/Blacksmith/master/",
-        "artifactsAzureSentinel2Go": "https://raw.githubusercontent.com/OTRF/Azure-Sentinel2Go/master/"
+        "artifactsBlacksmith": "https://raw.githubusercontent.com/CyberEyeResearchLabs/Blacksmith/master/",
+        "artifactsAzureSentinel2Go": "https://raw.githubusercontent.com/CyberEyeResearchLabs/Azure-Sentinel2Go/master/"
     },
     "resources": [
         {
